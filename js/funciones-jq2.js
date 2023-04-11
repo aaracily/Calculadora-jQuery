@@ -56,7 +56,7 @@ if (botonesNum/0) {
 }
 
 function validarOperacion() {
-    const operadores = ["+", "-", "*", "/", "(", ")", "" ,"√"];
+    const operadores = ["+", "-", "*", "/", ""];
     const expresion = tresultado.value;
 
     // Verificar si hay dos operadores juntos
