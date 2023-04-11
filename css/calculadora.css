@@ -1,16 +1,19 @@
 body{
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(0deg, #ffffff 0%, #7d7e82 100%);
+    background-repeat: no-repeat;
 }
+
 h1{
-    color: rgb(115, 115, 147);
+    color: rgb(35, 29, 29);
 
 }
 #fondo{
-    border: 2px solid rgb(33, 30, 30);
+    border: 3px solid rgb(33, 30, 30);
     border-radius: 6px;
     padding: 20px;
     background-color: #868c82;
     min-width: 250px;
-    max-width: 500px;
+    max-width: 800px;
 }   

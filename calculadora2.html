@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/calculadora.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.js" integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/08f254d366.js" crossorigin="anonymous"></script>
+
+
+    <title>jQuery</title>
+</head>
+<body>
+    <div>
+        <header class="container text-center my-3">
+            <h1>Calculadora con jQuery</h1>
+        </header>
+        <main>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1">
+                    <ul class="nav flex-column text-center my-4">
+                        <li class="nav-item">
+                          <a class="nav-link fw-bold" aria-current="page" href="./calculadora.html">NORMAL</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active fw-bold" href="#">MEJORADA</a>
+                        </li>
+                      </ul>
+                </div>
+                <div class="col-1"></div>
+            <div id="fondo" class="container-fluid" class="col-8">
+                <div class="row">
+                    <div class="col ">
+                        <input class="form-control py-2 " id="resultado" type="text" value="" aria-label="Disabled input example" disabled readonly>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="btn-group ">
+                        <button id="b1" class="btn  btn-dark px-3 mx-1">1 </button>
+                        <button id="b2" class="btn   btn-dark px-3 mx-1">2 </button>
+                        <button id="b3" class="btn  btn-dark px-3 mx-1">3</button>
+                        <button id="bplus" class="btn  btn-primary mx-1 px-3">+</button>
+                    </div>
+                    
+                </div>
+                <div class="row mt-2">
+                    <div class="btn-group ">
+                        <button id="b4" class="btn  btn-dark px-3 mx-1">4 </button>
+                        <button id="b5" class="btn   btn-dark px-3 mx-1">5 </button>
+                        <button id="b6" class="btn  btn-dark px-3 mx-1">6</button>
+                        <button id="bmenus" class="btn   btn-primary px-3 mx-1">-</button>
+                    </div>
+                    
+                </div>
+                <div class="row mt-2">
+                    <div class="btn-group">
+                        <button id="b7" class="btn px-3 mx-1 btn-dark">7</button>
+                        <button id="b8" class="btn px-3 mx-1 btn-dark">8 </button>
+                        <button id="b9" class="btn  px-3 mx-1 btn-dark">9 </button>
+                        <button id="bmultiply" class="btn  px-3 mx-1 btn-primary">*</button>
+                    </div>
+                    
+                </div>
+                <div class="row mt-3">
+                    <div class="btn-group ">
+                        <button id="bclean" class="btn mx-1 px-3 btn-secondary">c</button>
+                        <button id="b0" class="btn mx-1 px-3 btn-dark">0 </button>
+                        <button id="bequal" class="btn mx-1 px-3 btn-secondary">=</button>
+                        <button id="bdiv" class="btn mx-1 px-3 btn-primary">/</button>
+                    </div>
+                    
+                
+                </div>
+                <div class="row mt-2">
+                    <div class="btn-group ">
+                        <button id="bParentesisOpen" class="btn mx-1 px-3 btn-primary">(</button>
+                        <button id="bParentesisClose" class="btn mx-1 px-3 btn-primary">) </button>
+                        <button id="bElevadoDos" class="btn mx-1 px-3 btn-primary">^2</button>
+                        <button id="bRaizCuadrada" class="btn mx-1 px-3 btn-primary">√</button>
+                    </div>
+                </div>
+                    
+            </div>
+            <div class="col-1"></div>
+            </div>
+
+        </main>
+    </div>
+    <footer class="container text-center my-3">
+        <div>
+            <i class="fa-solid fa-calculator"></i>Calculadora
+            <i class="fa-solid fa-people-group"></i>Grupo G5 
+        </div>
+        
+      
+    </footer>
+    
+   <!--<script src="https://code.jquery.com/jquery-3.6.4.slim.js" integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script> --> 
+  <!-- <script src="https://code.jquery.com/jquery-3.6.4.slim.js" integrity="sha256-dWvV84T6BhzO4vG6gWhsWVKVoa4lVmLnpBOZh/CAHU4=" crossorigin="anonymous"></script> -->
+
+  <script src="./js/calculadora.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+</body>
+</html>
