@@ -24,7 +24,33 @@ for (let i = 0; i < botonesOperacion.length; i++) {
 }
 
 function putOperador(op) {
-    tresultado.value += op;
+    if (validarOperador(op)) {
+        tresultado.value += op;
+    } else {
+        tresultado.value = 'Error, limpie y digite nuevamente';
+    }
+}
+
+function validarOperador(op) {
+    if (op === '(' || op === ')') {
+        // verificar si hay un número o un paréntesis de apertura antes
+        const ultimoChar = tresultado.value.charAt(tresultado.value.length - 1);
+        if (!isNaN(ultimoChar) || ultimoChar === '(' || ultimoChar === '') {
+            return true;
+        } else {
+            return false;
+        }
+    } else if (op === '()' || op === '^2' || op === '√') {
+        // verificar si hay un número antes
+        const ultimoChar = tresultado.value.charAt(tresultado.value.length - 1);
+        if (!isNaN(ultimoChar)) {
+            return true;
+        } else {
+            return false;
+        }
+    } else {
+        return true;
+    }
 }
 
 var blimpiar = document.getElementById('bclean');
@@ -72,6 +98,25 @@ function validarOperacion() {
     const ultimoChar = expresion.charAt(expresion.length - 1);
     if (operadores.includes(ultimoChar)) {
         return false;
+    }
+
+    // Verificar si hay un número después del símbolo de raíz cuadrada (√)
+    if (expresion.includes('√')) {
+        const index = expresion.indexOf('√');
+        const siguienteChar = expresion.charAt(index + 1);
+        if (isNaN(siguienteChar)) {
+            return false;
+        }
+    }
+
+    // Verificar si hay un número dentro de los paréntesis en ()
+    if (expresion.includes('()')) {
+        const index = expresion.indexOf('()');
+        const anteriorChar = expresion.charAt(index - 1);
+        const siguienteChar = expresion.charAt(index + 2);
+        if (isNaN(anteriorChar) || isNaN(siguienteChar)) {
+            return false;
+        }
     }
 
     return true;

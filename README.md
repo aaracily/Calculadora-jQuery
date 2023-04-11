@@ -23,6 +23,8 @@ Para este trabajo, utilizamos tanto CSS como jQuary para la configuración del s
 
 Usted podra visualizar en el archivo principal llamado "calculadora.html". Aquí se encuentra el proyecto de nuestra calculadora. En las demas carpetas, usted encontrará tanto los archivos .js como .css
 
+PD: El archivo "funciones-jq2.js" y "ejemplos-jq.js" son archivos de prueba, favor no utilizar.
+
 EQUIPO:
  Aracily Morales 
  Ricardo Cea
