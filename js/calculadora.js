@@ -43,7 +43,7 @@ $(document).ready(function(){
     $("#bequal").on("click", function () {
         try{
             const expresion = $("#resultado").val();
-            if (expresion.includes('/0')) {
+            if (expresion.includes('/0')|| expresion.includes('//')||expresion.includes('**') ) {
                 putInResult("Error, limpie y digite nuevamente");
                 return;
             }
